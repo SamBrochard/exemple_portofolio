@@ -1,113 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-	<meta charset="utf-8" />
-	<title>Module 11 - Portfolio</title>
-	<!-- Appel CSS -->
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Portofolio</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/index.css">  
 </head>
 <body>
-	<!--HEADER-->
-	<header class="container">
-		<a href="index.html"><img src="img/logo.svg" alt="logo de mon portfolio" /> John Doe</a>
-		<nav>
-			<a href="index.html"><i class="fa fa-home"></i> Accueil</a>
-			<a href=""><i class="fa fa-folder-open"></i> Réalisations</a>
-			<a href=""><i class="fa fa-envelope"></i> Contact</a>
-		</nav>
+	<header>
+		<div class="logo">
+			<a href="#">
+				<img src="img/logo.svg">
+			 	<h1>John Doe</h1>
+			</a>
+		</div>
+	 	<nav>
+	 		<ul>
+	 		<li><i class="fa fa-home fa-2x " aria-hidden="true"></i><a href="">Accueil</a></li>
+	 		 <li><i class="fa fa-folder-open fa-2x " aria-hidden="true"></i><a href="">Réalisations</a></li>
+	 		 <li><i class="fa fa-envelope fa-2x" aria-hidden="true"></i><a href="">Contact</a></li>
+	 		</ul>
+	 	</nav>
 	</header>
-	<!--MAIN CONTENT-->
 	<main>
-		<section id="presentation">
-			<div class="cover">
-				<div class="container">
-					<h1>Bonjour et bienvenue sur mon portfolio</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<a class="cta" href="#">Découvrez-moi !</a>
-				</div>
-			</div>
+		<section class="hello">
+			<h1>- Bonjour et bienvenue sur mon portofolio -</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores facere fuga dolore sit quidem tempora ipsum illum corrupti saepe! Ex incidunt, nam ipsum consectetur magnam repellat vitae suscipit maiores minima.</p>
+			<a href="#">Découvrez-moi !</a>
 		</section>
-		<section id="canvas" class="container">
-			<h2>Mes compétences</h2>
-			<canvas id="skill" width="800" height="400"></canvas>
-			<script type="text/javascript">
-				var c = document.getElementById( "skill" );
-				var ctx = c.getContext("2d");
-				// Triangle
-				ctx.beginPath();
-				ctx.moveTo(400,50);
-				ctx.lineTo(600,400);
-				ctx.lineTo(200,400);
-				ctx.fillStyle = "#7ba360";
-				ctx.fill();
-				// Texte
-				ctx.beginPath();
-				ctx.fillStyle = "#888";
-				ctx.font = "16pt Bree Serif";
-				ctx.fillText('HTML',370,25);
-				ctx.fillText('CSS',625,395);
-				ctx.fillText('JS',125,395);
-				ctx.fill();
-			</script>
-		</section>
-		<section id="realisation" class="container">
-			<h2>Mes réalisations</h2>
-			<div class="column">
-				<div class="column">
-					<i class="fa fa-coffee"></i>
-					<h2>On discute</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-				<div class="column">
-					<i class="fa fa-flask"></i>
-					<h2>On tente</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-				<div class="column">
-					<i class="fa fa-code"></i>
-					<h2>On code</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-			</div>
-		</section>
-		<section id="resume" class="container">
-			<h2>Quelques exemples de réalisations</h2>
-			<div class="clear">
-				<h3>Orange Juice :</h3>
-				<img src="img/real/1.png" alt="" />
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<a href="#">En savoir plus <i class="fa fa-plus-circle"></i></a>
-			</div>
-			<div class="clear">
-				<h3>Time Past :</h3>
-				<img src="img/real/2.png" alt="" />
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<a href="#">En savoir plus <i class="fa fa-plus-circle"></i></a>
-			</div>
-			<div class="clear">
-				<h3>Aqua Plant :</h3>
-				<img src="img/real/3.png" alt="" />
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<a href="#">En savoir plus <i class="fa fa-plus-circle"></i></a>
-			</div>
-		</section>
-		<section id="contact" class="container">
-			<h2>Contactez-moi</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<form>
-				<input type="text" name="name" placeholder="Votre prénom">
-				<input type="text" name="mail" placeholder="Votre mail">
-				<textarea name="message" rows="1" placeholder="Votre message"></textarea>
-			</form>
-		</section>
+		<div class="container">
+			<section class="competence">
+				<h2 >-Mes compétences-</h2>
+					<canvas id="triangle" width="800" height="400">
+					</canvas>
+					<script type="text/javascript">
+						var c = document.getElementById( "triangle" );
+						var ctx = c.getContext("2d");
+						// Triangle
+						ctx.beginPath();
+						ctx.moveTo(400,50);
+						ctx.lineTo(600,400);
+						ctx.lineTo(200,400);
+						ctx.fillStyle = "#7ba360";
+						ctx.fill();
+						// Texte
+						ctx.beginPath();
+						ctx.fillStyle = "#888";
+						ctx.font = "16pt Bree Serif";
+						ctx.fillText('HTML',370,25);
+						ctx.fillText('CSS',625,395);
+						ctx.fillText('JS',125,395);
+						ctx.fill();
+						</script>
+			</section>
+			<section class="mywork">
+				<h2>-Mes réalisations-</h2>
+					<div class="talk">
+						<i class="fa fa-coffee fa-2x" aria-hidden="true"></i>
+						<h2>-On discute-</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ut dolorem non veritatis id esse commodi, mollitia</p>
+					</div>
+					<div class="try">
+						<i class="fa fa-flask fa-2x" aria-hidden="true"></i>
+						<h2>-On tente-</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ut dolorem non veritatis id esse commodi, mollitia</p>
+					</div>
+					<div class="code">
+						<i class="fa fa-code fa-2x" aria-hidden="true"></i>
+						<h2>-On code-</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ut dolorem non veritatis id esse commodi, mollitia</p>
+					</div>
+			</section>
+			<section class="exemple">
+				<article class="orangejuice">
+					<h2 class="title">-Quelque exemples de réalisations-</h2>
+					<h3>Orange Juice :</h3>
+					<img src="img/real/1.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates minus, vel odio, hic reprehenderit vero. Repellendus blanditiis reiciendis doloremque ab ipsam voluptatem, voluptatum assumenda quasi vel hic ducimus exercitationem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur hic quos voluptatum. Libero asperiores reiciendis dolore nemo, provident iste praesentium dolorum, officiis eos mollitia quos? Fugiat, expedita. Quia, excepturi, eos.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates minus, vel odio, hic reprehenderit vero. Repellendus blanditiis reiciendis doloremque ab ipsam voluptatem, voluptatum assumenda quasi vel hic ducimus exercitationem. Modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Voluptates minus, vel odio, hic reprehenderit vero. Repellendus blanditiis reiciendis doloremque ab ipsam voluptatem, voluptatum assumenda quasi vel hic ducimus exercitationem. Modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit laborum doloribus tempore quos non quia assumenda voluptate necessitatibus molestias labore officia ducimus facilis, quidem officiis quisquam iure enim quaerat ipsum? </p>
+					<a href="#">En savoir plus<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+				</article>
+				<article class="time">
+					<h3>Time Past :</h3>
+					<img src="img/real/2.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates minus, vel odio, hic reprehenderit vero. Repellendus blanditiis reiciendis doloremque ab ipsam voluptatem, voluptatum assumenda quasi vel hic ducimus exercitationem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur hic quos voluptatum. Libero asperiores reiciendis dolore nemo, provident iste praesentium dolorum, officiis eos mollitia quos? Fugiat, expedita. Quia, excepturi, eos.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates minus, vel odio, hic reprehenderit vero. Repellendus blanditiis reiciendis doloremque ab ipsam voluptatem, voluptatum assumenda quasi vel hic ducimus exercitationem. Modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Voluptates minus, vel odio, hic reprehenderit vero. Repellendus blanditiis reiciendis doloremque ab ipsam voluptatem, voluptatum assumenda quasi vel hic ducimus exercitationem. Modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit laborum doloribus tempore quos non quia assumenda voluptate necessitatibus molestias labore officia ducimus facilis, quidem officiis quisquam iure enim quaerat ipsum? </p>
+					<a href="#">En savoir plus<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+				</article>
+				<article class="plant">
+					<h3>Aqua Plant :</h3>
+					<img src="img/real/3.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates minus, vel odio, hic reprehenderit vero. Repellendus blanditiis reiciendis doloremque ab ipsam voluptatem, voluptatum assumenda quasi vel hic ducimus exercitationem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur hic quos voluptatum. Libero asperiores reiciendis dolore nemo, provident iste praesentium dolorum, officiis eos mollitia quos? Fugiat, expedita. Quia, excepturi, eos.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates minus, vel odio, hic reprehenderit vero. Repellendus blanditiis reiciendis doloremque ab ipsam voluptatem, voluptatum assumenda quasi vel hic ducimus exercitationem. Modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Voluptates minus, vel odio, hic reprehenderit vero. Repellendus blanditiis reiciendis doloremque ab ipsam voluptatem, voluptatum assumenda quasi vel hic ducimus exercitationem. Modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit laborum doloribus tempore quos non quia assumenda voluptate necessitatibus molestias labore officia ducimus facilis, quidem officiis quisquam iure enim quaerat ipsum? </p>
+					<a href="#">En savoir plus<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+				</article>
+			</section>
+		</div>
 	</main>
+	<footer>
+		<h2>-Contactez moi-</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis perspiciatis ex beatae quis, tenetur fuga officiis iure vero eum sint minima soluta quod saepe expedita aspernatur, nemo doloribus laudantium rerum.</p>
+		<form>
+			<input class="user" type="text" name="name" placeholder="Votre prénom">
+			<input  class="user" type="text" name="surname" placeholder="Votre nom">
+			<input class="mail" type="mail" name="mail" placeholder="Votre mail">
+			<input class="question" type="textarea" name="question" placeholder="Votre message">
+			<input class="submit" type="submit" name="envoyer" value="Envoyer !">
+		</form>
+
+	</footer>
 </body>
 </html>

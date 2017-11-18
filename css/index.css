@@ -1,0 +1,262 @@
+/* Global*/
+* {
+    box-sizing: border-box;
+    /*eviter les bug sous chrome de transition*/
+    -webkit-transform: translate(0;);
+}
+html {
+    font-size: 16px;
+}
+body{
+	font-family: 'Bree Serif', serif;
+	text-align: center;
+	background-image: url(../img/fond.png);
+}
+header,.container,footer{
+	max-width: 1100px;
+	margin: auto;
+}
+a{
+	text-decoration: none;
+}
+p{
+	line-height: 1.8em;
+}
+
+/********************position des eléments********************************/
+
+
+header{
+	padding: 2em 0;
+}
+header .logo, header nav{
+	display: inline-block;
+	vertical-align: middle;
+
+}
+header .logo{
+	width: 40%;
+	text-align: left;
+}
+header nav {
+	width: 55%;
+}
+.logo img, .logo h1{
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 .5em ;
+}
+.logo img{
+	width: 14%;
+}
+header a,header i{
+	display: block;
+}
+header li{
+	display: inline-block;
+	padding: 0 2em ;
+
+}
+header li i {
+	padding-bottom: 0em;
+}
+
+.hello{
+	margin-top: 2em;
+	padding: 10em 0;
+	background-image: url(../img/bg_header.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.hello p{
+	margin: 4em 3em;
+}
+.hello a{
+	width: 15%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: .75em 1.5em;
+	border-radius: 5px;
+}
+
+
+.competence{
+	padding:  2em 0 4em 0;
+}
+.competence h2{
+	margin-bottom: 3em
+}
+
+.mywork{
+	padding: 3em 0 5em 0;
+}
+.mywork div{
+	display: inline-block;
+	width: 25%;
+	margin: 0 1em;
+}
+.mywork i{
+	padding: .65em;
+	border: 2px solid #DFE1E0;
+	border-radius: 50%;
+	background-color:#EFF1F0;
+	color: #999999;
+}
+.mywork h2{
+	margin-bottom: 3em;
+}
+.exemple{
+	padding: 4em 0;
+	text-align: left;
+}
+.exemple img{
+	width: 45%;
+	height: auto;
+}
+.exemple .title{
+	text-align: center;
+}
+.exemple a, .exemple i {
+	vertical-align: middle;
+}
+.exemple a{
+	padding: .75em;
+	margin: 2em;
+	transition-property: all, .3s;
+}
+.exemple i {
+	padding: .5em;
+}
+.orangejuice img, .plant img{
+	float: right;
+}
+.time img{
+	float: left;
+}
+
+
+.user,.mail,.question, .submit{
+	background-position: 10px;
+	background-size: 40px;
+	border: 1px solid #999A9C;
+	width: 45%;
+	padding: 1em .5em 1em 4em;
+	border-radius: 25px;
+	margin: .25em;
+}
+
+.user{
+	background-image: url(../img/bg_form_name.svg);
+	background-repeat: no-repeat;
+}
+.mail{
+	background-image: url(../img/bg_form_mail.svg);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-position: 10px;
+	background-size: 40px;
+}
+.question{
+	background-image: url(../img/bg_form_message.svg);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-position: 10px;
+	background-size: 40px;
+}
+
+.submit{
+	padding-left :0;
+}
+/**********************couleur et styles ********************/
+body{
+	color: #999999;
+}
+
+a{
+	color: #999999;
+}
+
+h1, h2, h3{
+	font-weight: lighter;
+}
+
+nav a{
+	font-size: 1.5em;
+}
+.hello{
+	color: #fff;
+}
+
+.hello a{
+	background-color: #F02169;
+	color: #fff;
+}
+
+
+main h2,main h3,main i, main a{
+	color: #F02169;
+}
+
+
+footer h2{
+	color: #F02169;
+}
+footer .submit{
+	width: 20%;
+	color: #F02169;
+	margin: 1em;
+	border: none;
+	transition-property: all, .3s;
+	transition-duration:1s;
+}
+
+/**********************passage de la souris : hover *****************/
+.logo:hover img{
+	width: 16%;
+}
+.logo:hover h1{
+	color: #F02169;
+}
+header li:hover{
+		animation: Animation 1s;
+}
+header li:hover a, header li:hover i{
+	color: #F02169;
+
+}
+.mywork i:hover{
+	animation:bounce .5s ease infinite alternate;
+}
+footer .submit:hover{
+	background-color: #F02169;
+	color: #fff;
+}
+.exemple a:hover{
+	color: #fff;
+	background-color: #F02169;
+	padding: .75em;
+	border-radius: 5px;
+}
+.exemple a:hover i{
+	color: #fff;	
+}
+
+@keyframes Animation{
+
+	from{
+		transform: translateY(0);}
+	50%{
+		transform: translateY(1em);}
+	to{
+		transform: translateY(1.5em);}
+}
+@keyframes bounce{
+	from{
+		
+		transform: translateY(0);
+	}
+	to{
+		transform: translateY(-20px);
+	}
+}
